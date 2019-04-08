@@ -1,0 +1,32 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>部分信息</h1>
+    <hr>
+    <table>
+        <tr>
+            <th>部门编号</th>
+            <th>部门名称</th>
+            <th>所在地</th>
+        </tr>
+        {% for dept in dept_list %}
+        <tr>
+            <td>{{dept.no}}</td>
+            <td>{{dept.name}}</td>
+            <td>{{dept.location}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>>
