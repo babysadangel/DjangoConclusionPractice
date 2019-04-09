@@ -1,0 +1,2 @@
+# DjangoConclusionPractice
+Django development practices
