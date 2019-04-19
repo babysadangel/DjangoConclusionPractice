@@ -1,10 +1,11 @@
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 
 
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils.six import python_2_unicode_compatible
+
 
 class Category(models.Model):
 
