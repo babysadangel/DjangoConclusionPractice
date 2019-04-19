@@ -23,7 +23,10 @@ from  django.urls import  path, include
 from demo import  views
 
 urlpatterns = [
-    path('',views.show_subjects),
+    path('',views.login),
+    path('subjects/',views.show_subjects)
     path('subjects/<int:no>',views.show_teachers),
+    path('good/<int:no>',views.make_comment),
+    path('bad/<int:no>',views.make_comment),
     path('admin/', admin.site.urls),
 ]
