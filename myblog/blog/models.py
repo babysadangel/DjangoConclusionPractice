@@ -7,6 +7,7 @@ from django.urls import reverse
 from django.utils.six import python_2_unicode_compatible
 
 
+# 分类
 class Category(models.Model):
 
     name = models.CharField(max_length=100,verbose_name='分类')
@@ -19,6 +20,7 @@ class Category(models.Model):
         verbose_name_plural = '分类'
 
 
+# 标签
 class Tag(models.Model):
     name = models.CharField(max_length=100, verbose_name='标签')
 
@@ -30,6 +32,7 @@ class Tag(models.Model):
         verbose_name_plural = '标签'
 
 
+# 文章
 @python_2_unicode_compatible
 class Post(models.Model):
 
